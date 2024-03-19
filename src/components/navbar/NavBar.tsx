@@ -5,35 +5,23 @@ import styles from "./NavBar.module.css";
 
 const NavBar: React.FC = () => {
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "white" }}>
-      <Container>
-        <Navbar.Brand href="/dashboard" className={styles.brand}>
-          APIMaker
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav>
-            <NavLink
-              to="/dashboard"
-              className="nav-link"
-              style={{ marginTop: "10px" }}
-            >
-              Dashboard
-            </NavLink>
-            <NavLink
-              to="/collections"
-              className="nav-link"
-              style={{ marginTop: "10px" }}
-            >
-              Collections
-            </NavLink>
-            <NavLink to="/profile" className="nav-link">
-              <i className={`bi bi-person-fill ${styles.personIcon}`} />
-            </NavLink>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <section className={styles.navbar}>
+      <NavLink to="/dashboard" className={styles.navbar_brand}>
+        APIMaker
+      </NavLink>
+      <div className={styles.navbar_links}>
+        <NavLink to="/dashboard" className={styles.navbar_navlink}>
+          Dashboard
+        </NavLink>
+        <NavLink to="/collections" className={styles.navbar_navlink}>
+          Collections
+        </NavLink>
+        <NavLink to="/profile" className={styles.navbar_navlink_icon}>
+          <i className={`bi bi-person-fill ${styles.navbar_navlink_icon}`} />
+        </NavLink>
+      </div>
+      {/* ; */}
+    </section>
   );
 };
 
