@@ -1,0 +1,38 @@
+.toggleButton {
+    display: inline-flex;
+    background-color: #f0f0f0;
+    border-radius: 35px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 210px;
+    
+}
+
+.option {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s ease;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.selected {
+    color: #fff;
+}
+
+.highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #4caf50;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.right {
+    transform: translateX(100%);
+}

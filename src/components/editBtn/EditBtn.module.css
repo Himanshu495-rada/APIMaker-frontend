@@ -1,0 +1,9 @@
+.editBtn {
+    background-color: #017BFE;
+    color: white;
+    border-radius: 25px;
+    width: 90px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+}

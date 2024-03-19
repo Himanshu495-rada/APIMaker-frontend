@@ -1,0 +1,7 @@
+.collectionSelect {
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}

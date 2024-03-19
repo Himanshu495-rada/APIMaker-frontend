@@ -1,0 +1,78 @@
+.loginPage {
+    margin: 0;
+    padding: 0;
+    background-color: #E0E0E0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContainer {
+    width: 300px;
+    height: 330px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+    color: #707070;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.personIcon {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.keyIcon {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.formInput {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    margin-left: 10px;
+}
+
+.formInput:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(16, 132, 228);
+}
+
+.loginBtn {
+    width: 150px;
+    font-size: 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #007AFE;
+    border: none;
+    color: white;
+}
+
+.loginBtn:hover {
+    background-color: #005bbd;
+}
+
+.forgotBtn {
+    margin-top: 20px;
+    color: #707070;
+}

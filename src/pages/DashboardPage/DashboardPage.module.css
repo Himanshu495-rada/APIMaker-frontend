@@ -1,0 +1,8 @@
+.dashboardPage {
+    background-color: #F6F6F6;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
