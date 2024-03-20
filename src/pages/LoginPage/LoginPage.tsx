@@ -30,7 +30,9 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className={styles.loginPage}>
-      <Lottie options={defaultOptions} height={150} width={150} />
+      <div className={styles.animation}>
+        <Lottie options={defaultOptions} height={150} width={150} />
+      </div>
       <form onSubmit={handleSubmit} className={styles.formContainer}>
         <h1 className={styles.title}>Login</h1>
         <div className={styles.inputContainer}>

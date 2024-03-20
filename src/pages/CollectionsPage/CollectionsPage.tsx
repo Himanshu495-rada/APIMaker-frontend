@@ -33,10 +33,10 @@ const CollectionsPage: React.FC = () => {
   return (
     <div className={styles.page}>
       <NavBar />
-      <div className="container-fluid mt-4">
-        <div className="d-flex align-items-center flex-row">
+      <div className={styles.collectionsPage}>
+        <div className={styles.section_1_header}>
           <h1 className={styles.title}>Collections</h1>
-          <EditBtn />
+          <button className={styles.edit_btn}>Edit</button>
         </div>
         <CollectionTable data={collectionData} />
       </div>

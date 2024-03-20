@@ -29,7 +29,9 @@ function SignupPage() {
 
   return (
     <div className={styles.signupPage}>
-      <Lottie options={defaultOptions} height={150} width={150} />
+      <div className={styles.animation}>
+        <Lottie options={defaultOptions} height={150} width={150} />
+      </div>
       <form onSubmit={handleSubmit} className={styles.formContainer}>
         <h1 className={styles.title}>Signup</h1>
         <div className={styles.inputContainer}>

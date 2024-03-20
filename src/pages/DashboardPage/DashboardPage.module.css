@@ -1,6 +1,4 @@
 .dashboardPage {
-  background-color: #f6f6f6;
-  height: 100vh;
   display: flex;
   margin: 0;
   padding: 0;
@@ -8,7 +6,9 @@
 }
 
 .dashboardPage_container {
-  padding: 20px 20px;
+  padding: 20px 40px;
+  background-color: #f6f6f6;
+  height: 100vh;
 }
 
 /* common */
@@ -28,18 +28,52 @@
 
 .edit_btn {
   background-color: #3890f5;
-  border-radius: 20px;
-  font-size: 17px;
+  border-radius: 30px;
   margin-left: 100px;
-  border: none;
   color: white;
   padding: 10px 30px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.edit_btn:hover {
+  background-color: #005bbd;
 }
 
 .section_1_table {
   border: 1px solid black;
   margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
 }
+
+.section_1_table td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+}
+
+.section_requests_table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.section_requests_table td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+}
+
+.section_1_select_1:hover,
+.section_1_select_1:hover ~ .section_1_select_2 {
+  background-color: #f6f6f6;
+}
+
 /* section_1 end */
 
 /* section_2 */
@@ -49,11 +83,28 @@
 
 .configure_btn {
   background-color: #3890f5;
-  border-radius: 20px;
-  font-size: 17px;
+  border-radius: 30px;
   margin-left: 110px;
-  border: none;
   color: white;
   padding: 10px 30px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.configure_btn:hover {
+  background-color: #005bbd;
+}
+
+.section_2_table {
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.section_2_table_row td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
 }
 /* section_2 end */

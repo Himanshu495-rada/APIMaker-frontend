@@ -1,8 +1,33 @@
 .page {
-    background-color: #F6F6F6;
-    height: 100vh ;
+  background-color: #f6f6f6;
+  height: 100vh;
 }
 
-.title {
-    margin-right: 40px;
+.collectionsPage {
+  padding: 20px 40px;
+}
+
+.section_1_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.edit_btn {
+  padding: 10px 30px;
+  background-color: #3890f5;
+  border: none;
+  color: white;
+  margin-left: 100px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.edit_btn:hover {
+  background-color: #005bbd;
+}
+
+.collection_table {
+  border: 1px solid black;
+  border-collapse: collapse;
 }

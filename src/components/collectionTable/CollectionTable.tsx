@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ToggleBtn from "../toggleBtn/ToggleBtn";
 import styles from "./CollectionTable.module.css";
-import { Table, ToggleButton, ToggleButtonGroup } from "react-bootstrap";
 
 interface CollectionData {
   id: number;
@@ -72,11 +71,11 @@ const CollectionTable: React.FC<CollectionProps> = ({ data }) => {
   };
 
   return (
-    <Table bordered responsive>
+    <table className={styles.table}>
       <thead>
         <tr>
           <th>Collection Name</th>
-          <th className="d-flex justify-content-center">
+          <th className={styles.toggle_container}>
             <ToggleBtn options={options} />
           </th>
         </tr>
@@ -96,7 +95,7 @@ const CollectionTable: React.FC<CollectionProps> = ({ data }) => {
           </td>
           <td>
             {selectedCollection && (
-              <Table hover responsive>
+              <table className={styles.collection_table}>
                 <thead>
                   <tr>
                     <th>ID</th>
@@ -121,12 +120,12 @@ const CollectionTable: React.FC<CollectionProps> = ({ data }) => {
                       </tr>
                     ))}
                 </tbody>
-              </Table>
+              </table>
             )}
           </td>
         </tr>
       </tbody>
-    </Table>
+    </table>
   );
 };
 
